@@ -2,18 +2,18 @@
 
  <h1>[NeurIPS 2025] DESIGN: Encrypte<strong>D</strong> GNN Inference via Server-Side Input Graph Pruning</h1>
 
- <div align="center">
-   <a href="https://opensource.org/license/mit-0">
-     <img alt="MIT-0" src="https://img.shields.io/badge/License-MIT-0-4E94CE.svg">
-   </a>
-   <a href="">
-     <img src="https://img.shields.io/badge/Paper-ArXiv-darkred.svg" alt="Paper">
-   </a>
-   <a href="https://github.com/rai-lab-encrypted-gnn/design">
-     <img src="https://img.shields.io/badge/Project-Page-924E7D.svg" alt="Project">
-   </a>
- </div>
- </div>
+<div align="center">
+  <a href="https://opensource.org/license/mit-0">
+    <img alt="MIT‑0" src="https://img.shields.io/badge/License-MIT‑0-4E94CE.svg">
+  </a>
+  <a href="">
+    <img src="https://img.shields.io/badge/Paper-ArXiv-darkred.svg" alt="Paper">
+  </a>
+  <a href="https://github.com/rai-lab-encrypted-gnn/design">
+    <img src="https://img.shields.io/badge/Project-Page-924E7D.svg" alt="Project">
+  </a>
+</div>
+</div>
 
  > **DESIGN: EncrypteD GNN Inference via Server-Side Input Graph Pruning** 
  > Anonymous Authors, NeurIPS 2025 
