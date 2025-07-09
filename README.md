@@ -6,7 +6,7 @@
   <a href="https://opensource.org/license/mit-0">
     <img alt="MIT‑0" src="https://img.shields.io/badge/License-MIT‑0-4E94CE.svg">
   </a>
-  <a href="">
+  <a href="https://arxiv.org/abs/2507.05649">
     <img src="https://img.shields.io/badge/Paper-ArXiv-darkred.svg" alt="Paper">
   </a>
   <a href="https://github.com/rai-lab-encrypted-gnn/design">
