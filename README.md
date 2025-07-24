@@ -97,6 +97,19 @@ Epoch 100 | Train Loss: 0.1234 | Val Acc: 0.8050 | Test Acc: 0.8120
  python openfhe_model.py CiteSeer
  # ...
  ```
+ <details>
+<summary>Sample Output (for `seal_model.py Cora`)</summary>
+
+[INFO] Running SEAL Baseline for dataset: Cora
+[INFO] Loading plaintext model from models/Cora.pt and data...
+[INFO] Initializing FHE context (SEAL)...
+[INFO] Encrypting graph data... done (2.1s)
+[INFO] Performing FHE inference... done (45.8s)
+[INFO] Decrypting results... done (0.5s)
+[RESULT] Plaintext Acc: 0.8120 | FHE Acc: 0.8115 | Latency: 45.8s
+[INFO] Appending results to results/seal_results.csv
+
+</details>
 
  ### 3.3  DESIGN – Full Framework  *RQ1 & RQ2 main*
  ```bash
@@ -108,6 +121,20 @@ Epoch 100 | Train Loss: 0.1234 | Val Acc: 0.8050 | Test Acc: 0.8120
  python design_model.py Karate   prune:on adaptive_act:on
  ```
 
+ <details>
+<summary>Sample Output (for `design_model.py Cora prune:on adaptive_act:on`)</summary>
+
+[INFO] Running DESIGN for dataset: Cora with Pruning=ON, AdaptiveAct=ON
+[INFO] Loading plaintext model from models/Cora.pt and data...
+[INFO] Initializing FHE context (SEAL)...
+[INFO] Generating importance masks... done (5.5s)
+[INFO] Pruning graph and performing FHE inference with adaptive activation... done (22.3s)
+[INFO] Decrypting results... done (0.4s)
+[RESULT] Plaintext Acc: 0.8120 | FHE Acc: 0.8090 | Latency: 27.8s
+[INFO] Appending results to results/design_results.csv
+
+</details>
+
  ### 3.4  Ablations  *RQ3*
  ```bash
  # pruning only
@@ -117,6 +144,20 @@ Epoch 100 | Train Loss: 0.1234 | Val Acc: 0.8050 | Test Acc: 0.8120
  # neither component (square activation)
  python design_model.py Cora prune:off adaptive_act:off
  ```
+
+<details>
+<summary>Sample Output (for `design_model.py Cora prune:on adaptive_act:off`)</summary>
+
+[INFO] Running DESIGN for dataset: Cora with Pruning=ON, AdaptiveAct=OFF
+[INFO] Loading plaintext model from models/Cora.pt and data...
+[INFO] Initializing FHE context (SEAL)...
+[INFO] Generating importance masks... done (5.5s)
+[INFO] Pruning graph and performing FHE inference with square activation... done (31.2s)
+[INFO] Decrypting results... done (0.4s)
+[RESULT] Plaintext Acc: 0.8120 | FHE Acc: 0.8095 | Latency: 36.7s
+[INFO] Appending results to results/design_results.csv
+
+</details>
 
  ## 4 – Research Questions → Command Map
  | RQ  | Goal                                              | Command(s)                      |
