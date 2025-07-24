@@ -16,7 +16,7 @@
 </div>
 
  > **DESIGN: EncrypteD GNN Inference via Server-Side Input Graph Pruning** 
- > Anonymous Authors, NeurIPS 2025 
+ > Kaixiang Zhao, Joseph Yousry Attalla, Qian Lou, Yushun Dong, NeurIPS 2025 Under Review
 
  ---
 
