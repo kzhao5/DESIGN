@@ -97,9 +97,7 @@ Epoch 100 | Train Loss: 0.1234 | Val Acc: 0.8050 | Test Acc: 0.8120
  python openfhe_model.py CiteSeer
  # ...
  ```
- <details>
-<summary>Sample Output (for `seal_model.py Cora`)</summary>
-
+ <details> <summary>Sample Output (for <code>seal_model.py Cora</code>)</summary>
 [INFO] Running SEAL Baseline for dataset: Cora
 [INFO] Loading plaintext model from models/Cora.pt and data...
 [INFO] Initializing FHE context (SEAL)...
@@ -108,7 +106,6 @@ Epoch 100 | Train Loss: 0.1234 | Val Acc: 0.8050 | Test Acc: 0.8120
 [INFO] Decrypting results... done (0.5s)
 [RESULT] Plaintext Acc: 0.8120 | FHE Acc: 0.8115 | Latency: 45.8s
 [INFO] Appending results to results/seal_results.csv
-
 </details>
 
  ### 3.3  DESIGN – Full Framework  *RQ1 & RQ2 main*
@@ -142,9 +139,7 @@ Epoch 100 | Train Loss: 0.1234 | Val Acc: 0.8050 | Test Acc: 0.8120
  python design_model.py Cora prune:off adaptive_act:off
  ```
 
-<details>
-<summary>Sample Output (for `design_model.py Cora prune:on adaptive_act:off`)</summary>
-
+<details> <summary>Sample Output (for <code>design_model.py Cora prune:on adaptive_act:off</code>)</summary>
 [INFO] Running DESIGN for dataset: Cora with Pruning=ON, AdaptiveAct=OFF
 [INFO] Loading plaintext model from models/Cora.pt and data...
 [INFO] Initializing FHE context (SEAL)...
@@ -153,7 +148,6 @@ Epoch 100 | Train Loss: 0.1234 | Val Acc: 0.8050 | Test Acc: 0.8120
 [INFO] Decrypting results... done (0.4s)
 [RESULT] Plaintext Acc: 0.8120 | FHE Acc: 0.8095 | Latency: 36.7s
 [INFO] Appending results to results/design_results.csv
-
 </details>
 
  ## 4 – Research Questions → Command Map
