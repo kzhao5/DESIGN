@@ -155,9 +155,10 @@
 
  ## 8 – Citation
  ```bibtex
- @inproceedings{design2025,
-   title     = {DESIGN: Encrypted GNN Inference via Server-Side Input Graph Pruning},
-   booktitle = {Advances in Neural Information Processing Systems},
-   year      = {2025}
- }
+@article{zhao2025design,
+  title={DESIGN: Encrypted GNN Inference via Server-Side Input Graph Pruning},
+  author={Zhao, Kaixiang and Attalla, Joseph Yousry and Lou, Qian and Dong, Yushun},
+  journal={arXiv preprint arXiv:2507.05649},
+  year={2025}
+}
  ```
