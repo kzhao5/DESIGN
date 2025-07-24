@@ -74,6 +74,7 @@
  ```
 <details>
 <summary>Sample Output</summary>
+ 
 [INFO] Loading dataset: Cora...
 [INFO] Training GCN model on Cora...
 Epoch 100 | Train Loss: 0.1234 | Val Acc: 0.8050 | Test Acc: 0.8120
@@ -81,6 +82,7 @@ Epoch 100 | Train Loss: 0.1234 | Val Acc: 0.8050 | Test Acc: 0.8120
 [INFO] Saving trained model to models/Cora.pt
 ...
 [INFO] All models trained and saved in ./models/
+
 </details>
 
  ### 3.2  Baselines (SEAL / OpenFHE)  *RQ1 & RQ2 reference*
