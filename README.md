@@ -121,18 +121,15 @@ Epoch 100 | Train Loss: 0.1234 | Val Acc: 0.8050 | Test Acc: 0.8120
  python design_model.py Karate   prune:on adaptive_act:on
  ```
 
- <details>
-<summary>Sample Output (for `design_model.py Cora prune:on adaptive_act:on`)</summary>
-
-[INFO] Running DESIGN for dataset: Cora with Pruning=ON, AdaptiveAct=ON
+<details> <summary>Sample Output (for <code>design_model.py Cora prune:on adaptive_act:off</code>)</summary>
+[INFO] Running DESIGN for dataset: Cora with Pruning=ON, AdaptiveAct=OFF
 [INFO] Loading plaintext model from models/Cora.pt and data...
 [INFO] Initializing FHE context (SEAL)...
 [INFO] Generating importance masks... done (5.5s)
-[INFO] Pruning graph and performing FHE inference with adaptive activation... done (22.3s)
+[INFO] Pruning graph and performing FHE inference with square activation... done (31.2s)
 [INFO] Decrypting results... done (0.4s)
-[RESULT] Plaintext Acc: 0.8120 | FHE Acc: 0.8090 | Latency: 27.8s
+[RESULT] Plaintext Acc: 0.8120 | FHE Acc: 0.8095 | Latency: 36.7s
 [INFO] Appending results to results/design_results.csv
-
 </details>
 
  ### 3.4  Ablations  *RQ3*
