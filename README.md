@@ -1,6 +1,6 @@
  <div align="center">
 
- <h1>[NeurIPS 2025] DESIGN: Encrypte<strong>D</strong> GNN Inference via Server-Side Input Graph Pruning</h1>
+ <h1>[NeurIPS 2025 Under Review] DESIGN: Encrypte<strong>D</strong> GNN Inference via Server-Side Input Graph Pruning</h1>
 
 <div align="center">
   <a href="https://opensource.org/license/mit-0">
