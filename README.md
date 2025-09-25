@@ -16,7 +16,7 @@
 </div>
 
  > **DESIGN: EncrypteD GNN Inference via Server-Side Input Graph Pruning** 
- > Kaixiang Zhao, Joseph Yousry Attalla, Qian Lou, Yushun Dong, NeurIPS 2025 Under Review
+
 
  ---
 
@@ -196,13 +196,3 @@ Epoch 100 | Train Loss: 0.1234 | Val Acc: 0.8050 | Test Acc: 0.8120
  * **FHE parameters** (`poly_modulus_degree`, `coeff_modulus`, `scale`) may need tuning for deep polynomials.
  * **Runtime:** FHE is slow; start with Cora/Karate for sanity checks.
  * **Consistency:** reuse the same `.pt` for a given dataset across runs.
-
- ## 8 – Citation
- ```bibtex
-@article{zhao2025design,
-  title={DESIGN: Encrypted GNN Inference via Server-Side Input Graph Pruning},
-  author={Zhao, Kaixiang and Attalla, Joseph Yousry and Lou, Qian and Dong, Yushun},
-  journal={arXiv preprint arXiv:2507.05649},
-  year={2025}
-}
- ```
