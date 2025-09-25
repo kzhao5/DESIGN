@@ -1,38 +1,38 @@
- <div align="center">
+<div align="center">
 
- <h1>[NeurIPS 2025 Under Review] DESIGN: Encrypte<strong>D</strong> GNN Inference via Server-Side Input Graph Pruning</h1>
+<h1>DESIGN: Encrypte<strong>D</strong> GNN Inference via Server-Side Input Graph Pruning</h1>
 
- > **DESIGN: EncrypteD GNN Inference via Server-Side Input Graph Pruning** 
+</div>
 
+> **DESIGN: EncrypteD GNN Inference via Server-Side Input Graph Pruning**
 
- ---
+---
 
- ## ✨ Abstract
- Graph Neural Networks (GNNs) under Fully Homomorphic Encryption (FHE) are extremely slow. **DESIGN** accelerates encrypted inference by 
- 1. encrypting node-degree statistics, 
- 2. partitioning nodes into importance levels, 
- 3. **pruning** low-importance nodes/edges, and 
- 4. using **adaptive polynomial activations** (lower degree for less-important nodes). 
- Across five benchmarks DESIGN achieves up to **2 × latency reduction** with ≤ 2 pp accuracy loss vs. plaintext.
+## ✨ Abstract
+Graph Neural Networks (GNNs) under Fully Homomorphic Encryption (FHE) are extremely slow. **DESIGN** accelerates encrypted inference by 
+1. encrypting node-degree statistics, 
+2. partitioning nodes into importance levels, 
+3. **pruning** low-importance nodes/edges, and 
+4. using **adaptive polynomial activations** (lower degree for less-important nodes). 
+Across five benchmarks DESIGN achieves up to **2 × latency reduction** with ≤ 2 pp accuracy loss vs. plaintext.
 
- ---
+---
 
- ## 1 – Prerequisites
+## 1 – Prerequisites
 
- | Requirement | Details |
- |-------------|---------|
- | **Python**  | ≥ 3.8 |
- | **ML stack**| `torch`, `torch_geometric`, `numpy`, `scikit-learn`, `ogb` |
- | **FHE libs**| `seal` (≥ 4.2) · (optional) `openfhe` (≥ 1.2) |
- | **Helpers** | `PyYAML` (needed if compiling SEAL from source) |
+| Requirement | Details |
+|-------------|---------|
+| **Python**  | ≥ 3.8 |
+| **ML stack**| `torch`, `torch_geometric`, `numpy`, `scikit-learn`, `ogb` |
+| **FHE libs**| `seal` (≥ 4.2) · (optional) `openfhe` (≥ 1.2) |
+| **Helpers** | `PyYAML` (needed if compiling SEAL from source) |
 
- ```bash
- git clone https://github.com/rai-lab-encrypted-gnn/design.git
- cd design
- python -m venv .venv && source .venv/bin/activate
- pip install -r requirements.txt
- # If no wheel exists for SEAL/OpenFHE, follow docs/build_seal.md & docs/build_openfhe.md
- ```
+```bash
+# Obtain the source (anonymous package or local copy)
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+# If no wheel exists for SEAL/OpenFHE, follow docs/build_seal.md & docs/build_openfhe.md
+
 
  ---
 
